@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, render_template, jsonify  # Import jsonify
 import numpy as np
 import pandas as pd
@@ -133,5 +135,6 @@ def blog():
 
 
 if __name__ == '__main__':
-
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    debug_mode = os.environ.get('FLASK_DEBUG', '0') == '1'
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
