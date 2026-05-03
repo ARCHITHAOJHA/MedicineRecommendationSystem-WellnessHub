@@ -201,7 +201,6 @@ This project demonstrates:
 ## 👨‍💻 Author
 
 * Architha Ojha
-* GitHub: https://github.com/your-username
 
 ---
 
